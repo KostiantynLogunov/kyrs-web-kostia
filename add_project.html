@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Add Project</title>
+	<link rel="stylesheet" href="css/add_pro.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/slyder.css" type="text/css"> -->
+	<meta name="description" content="тут інфа для поісковіків про сайт ВІнниця успішне місто">
+	<meta name="keywords" content="Вінниця успіх Vinnitsia success"> <!-- ключовi слова -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- щоб сайти на моб були адаптивні --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">		
+<!-- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+</head>
+<body>
+	<main id="label1">
+
+		<div class="left_block"></div>
+
+		<div class="menu_nav">			
+			
+			<a href="#"><img src="img/header-img2.png" alt="menu_nav"></a>
+
+			<ul>
+				<li><a href="">Історія</a></li>
+				<li><a href="">Подарунки</a>
+					<ul>
+						<li><a href="#">Кабінет</a></li>
+						<li><a href="#">Персональні данні</a></li>
+						<li><a href="#">+Додати проект</a></li>
+						<li>
+							<a href="#">Дієвість</a>
+							<ul >
+								<li><a href="#">Я стежу</a></li>
+								<li id="last_li"><a href="#">Мене стежать</a></li>
+							</ul>
+						</li>
+						<li id="last_li"><a href="#">Товариство</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="">Успіх</a></li>
+				<li><a href="">Команда</a></li>
+				<li><a href="">Блоги</a></li>
+			</ul>
+			
+		</div>
+
+		<section>
+			<div class="content_header">
+				<span><i class="fa fa-plus-square-o" aria-hidden="true"></i>   Додати проект</span>
+				<img src="img/help.jpg" alt="help">
+			</div>
+
+			<div class="content">
+				
+				<div id="tab">
+					<input type="radio" name="table" id="n1" checked>
+					<label for="n1">Основні дані</label>
+					<input type="radio" name="table" id="n2" >
+					<label for="n2">Детальніше</label>
+					<input type="radio" name="table" id="n3" >
+					<label for="n3">Винагороди</label>
+					<input type="radio" name="table" id="n4" >
+					<label for="n4">Команда</label>
+					<input type="radio" name="table" id="n5" >
+					<label for="n5">Реквізити</label>
+					<input type="radio" name="table" id="n6" >
+					<label for="n6" id="noactive">Надіслати</label>
+
+
+					<div id="table">
+						<div class="tab_1">							
+							<form action="" method="post" name="new_proj_1">							
+								<table>
+									<tr>
+										<td>Назва проекту*</td>
+										<td id="name"><input type="text" name="name_proj" placeholder="Дайте своєму проекту файне імя" required ></td>
+									</tr>
+									<tr>
+										<td>Бюджет*</td>
+										<td id="sum"><input type="numbres" name="name_proj" placeholder="56 5456" required width=""> грн<h5>Впишіть бюджет проекту в гривнях. <a href="#" id="how_right">Як правильно вирахувати бюджет?</a></h5></td>
+
+									</tr>
+									<tr>
+										<td>Тривалість*</td>
+										<td>
+											<a href="#">30 днів</a>
+											<a href="#">60 днів</a>
+											<a href="#">90 днів</a>
+											<a href="#">365 днів</a>
+											<h5>Оберіть термін</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>Категорія*</td>
+										<td id="categoti">
+
+											<div class="cat_part_1">
+												<p><input type="radio" checked>Транспорт</p>
+												<p><input type="radio">Права людини</p>
+												<p><input type="radio">Освіта</p>
+												<p><input type="radio">Дизайн</p>
+												<p><input type="radio">Література</p>
+												<p><input type="radio">Музика</p>
+												<p><input type="radio">Медія</p>
+											</div>
+
+											<div class="cat_part_2">										
+												<p><input type="radio">Місто</p>
+												<p><input type="radio">Ітернет</p>
+												<p><input type="radio">Подорож</p>
+												<p><input type="radio">Соціум</p>
+												<p><input type="radio">Бізнес</p>
+												<p><input type="radio">Технології</p>
+												<p><input type="radio">Діти</p>
+											</div>
+
+											<div class="cat_part_3">
+												<p><input type="radio">Відео</p>
+												<p><input type="radio">Кіно</p>
+												<p><input type="radio">Здоров'я</p>							
+												<p><input type="radio">Економіка</p>
+												<p><input type="radio">Екологія</p>
+												<p><input type="radio">Театр</p>
+												<p><input type="radio">Мистецтво</p>
+											</div>				
+										</td>
+									</tr>
+
+									<tr>
+										<td>Образ проекту*</td>
+										<td>
+											<div class="obraz">
+												<div class="add_img">
+													<a href="#">											
+														<p>Натисніть, щоб завантажити або перетягніть зображення сюда</p>								
+													</a>
+												</div>
+												<h5>
+													Це зображення стане обкладинкою вашого проекта та буде аоказано на головній сторінці сайту та вашого проекту.</h5>
+													<h5>Розмір: 1920 х 530 рх&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Формати: jpeg / jpg / png
+												</h5><br><br>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Відео*</td>
+										<td id="add_video">
+											<div>
+												<input type="url">
+												<h5>Вставте посилання з youtube фбо vimeo. Відео найкращий спосіб відчуття емоції, мотиви і характер проекту. <a href="#">Ефективний хронометраж 1-3хв</a></h5>
+											</div>
+										</td>
+									</tr>									
+								</table>
+								<div class="save">
+									<a href="#"><img src="img/save.jpg" alt="save"></a>
+								</div>						
+								
+							</form>
+						</div>
+
+
+						<div class="tab_2">	
+						<form action="" method="post" name="new_proj_2">					
+							<table id="two">
+								<tr>
+									<td>Короткий опис*</td>
+									<td>
+										<textarea name="opys" id="" cols="60" rows="10"></textarea>
+										<h5>Поясніть свій проект один реченням</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>Детальний опис*</td>
+									<td id="opis2">
+										<div>
+											<textarea name="opys" id="" cols="60" rows="10"></textarea>
+											<div id="opis2-2">
+												<h5>Розкажіть про свій проект і переконайте людей чому варто в нього інвестувати.</h5>
+												<h5>Проаналізуйте <a href="#">успішні поректи</a>. Використовуйте не тільки слова,а й візуалізацію. Доречна якісна інфографіка додає ваги вашому проекту.</h5>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Статті бюджету*</td>
+									<td>
+
+										<textarea name="opys" id="" cols="60" rows="10"></textarea>
+										<div id="budget">
+											<h5>Куди буде використано бюджет, зібраний <a href="#">МістомУспіху</a>? Які ще можливі джерела фінансування?</h5>
+											<h5>Яка подальша доля проекту?</h5>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Зображення для соц мереж*</td>
+									<td>
+										<div class="img_for_soc">
+											<div id="img_for_soc">
+												<a href="#">Натисніть, щоб завантажити або перетягніть зображення сюди</a>
+											</div>
+											<h5>Завантажте квадратну картинку, яка відображатиметься при поширенні вашого проекту у соц-мережах та у інших службах. Якщо залишити це поле порожнім, буде використовуватися основний образ проекту.</h5>
+											<h5>Розмір: 500 х 500 рх&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Формати: jpeg / jpg / png</h5>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Сайт</td>
+									<td id="sait_add">
+										<input type="url" name="url">
+										<h5>Посилання на вебсайт проекту, якщо він уіснує</h5>
+										<br>
+										<p id="twiterok">
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+											<input type="url" name="url_twiter">
+										</p>
+
+										<p id="FB">
+											<i class="fa fa-facebook-official" aria-hidden="true"></i>
+											<input type="url" name="url_facebook">
+										</p>
+
+										<p id="google">
+											<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+											<input type="url" name="url_google">
+										</p>
+
+										<p id="utoube">
+											<i class="fa fa-youtube-square" aria-hidden="true"></i>
+											<input type="url" name="url_youtube">
+										</p>
+
+										<p id="link">
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+											<input type="url" name="url_link">
+										</p>
+									</td>
+								</tr>
+							</table>
+
+							<div class="save">
+								<a href="#"><img src="img/save.jpg" alt="save"></a>
+							</div>	
+
+							</form>	
+						</div>
+							
+						<div class="tab_3">
+							<form action="" method="post" name="new_proj_3">
+								<table id="three">
+									<tr>
+										<td><img src="img/win_proj.jpg" alt="win_proj"></td>
+										<td><h2>Винагорода 1</h2></td>
+									</tr>
+									<tr>
+										<td>Сума</td>
+										<td id="po_sum">
+											<input type="numbers" placeholder="56 5456">&nbsp;грн&nbsp;&nbsp;&nbsp;&nbsp;Кількість
+											<input type="numbers">
+											<div class="po_sumi">
+												<h5>Залиште поле пустим якщо кількість не обмежена</h5>
+											</div>
+										</td>										
+									</tr>
+
+									<tr>
+										<td>Опис</td>
+										<td>
+											<textarea name="opis3" id="" cols="30" rows="10"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Зображення винагороди*</td>
+										<td>
+											<div class="img_win">
+												<a href="#">Натисніть, щоб завантажити або перетягніть зображення сюди</a>
+											</div>
+											<h5>Презентуй винагороду через образ</h5>
+											<h5>Розмір: 320 х 320&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Формати: jpeg / jpg / png</h5>
+
+										</td>
+									</tr>
+									<tr>
+										<td>Місяць</td>
+										<td>
+											<select name="month" id="month">
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="" selected="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>						
+											</select>
+											Рік
+											<select name="year" id="year">
+												<option value="">2010</option>
+												<option value="">2011</option>
+												<option value="">2012</option>
+												<option value="">2013</option>
+												<option value="">2014</option>
+												<option value="">2015</option>
+												<option value="">2016</option>
+												<option value="">2017</option>
+												<option value="">2018</option>
+												<option value="">2019</option>
+												<option value="">2020</option>
+												<option value="">2021</option>
+												<option value="">2022</option>
+												<option value="">2023</option>
+												<option value="">2024</option>
+												<option value="">2025</option>
+											</select>
+
+										</td>
+									</tr>
+								</table>
+
+								<div class="line_save">
+									<img src="img/line-save.jpg" alt="line">
+								</div>
+
+								<div class="add_present">
+									<a href="#">+Додати ще винагороду</a>
+								</div>
+
+								<div class="save">
+									<a href="#"><img src="img/save.jpg" alt="save"></a>
+								</div>
+
+							</form>						
+						</div>
+
+						<div class="tab_4">							
+							<form action="" method="post" name="new_proj_4">							
+								<table id="four">
+									<tr>
+										<td><i class="fa fa-users" aria-hidden="true"></i></td>
+										<td>
+											<h2>Команда проекту</h2>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img src="img/active_user.jpg" alt="act_u">
+											<img src="img/user1.jpg" alt="user1">
+										</td>
+										<td>
+											<input type="text" value="Логунова Вікторія">
+											<input type="text" value="автор проекту">
+
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img src="img/active_user.jpg" alt="act_u">
+											<img src="img/user2.jpg" alt="user1">
+											
+										</td>
+										<td>						
+											<span>					
+											<input type="text" value="Логунова Софія">
+											<input type="text" value="дизайнер проекту">
+											<a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+											</span>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img src="img/active_user.jpg" alt="act_u">
+											<img src="img/user2.jpg" alt="user1">
+										</td>
+										<td>
+											<span>
+											<input type="text" value="Логунова Юлія">
+											<input type="text" value="Тех-лід">
+											<a href="#"><i class="fa fa-trash" aria-hidden="true"></i>
+										</td></a>
+									</tr>
+								</table>
+								<div class="add_person">
+									<a href="#">+Додати ще людину</a>
+								</div>
+								<div class="save">
+									<a href="#"><img src="img/save.jpg" alt="save"></a>
+								</div>
+							</form>
+							
+						</div>
+
+						<div class="tab_5">
+							<form action="" method="post">
+								<table>
+									<tr>
+										<td></td>
+										<td>
+											<input type="radio" checked>Неприбутова організація
+											<input type="radio"> фізична особа підприємець
+										</td>
+									</tr>
+									<tr>
+										<td>Власник рахунку*</td>
+										<td><input type="name"></td>
+									</tr>
+									<tr>
+										<td>Адреса*</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>Mісто*</td>
+										<td>
+											<select name="city" id="city">
+												<option value="" selected></option>
+												<option value="">Київ</option>
+												<option value="" >Вінниця</option>
+												<option value="">Липовець</option>
+												<option value="">Луганск</option>
+												<option value="">Свердловск</option>
+												<option value="">Донбас</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Номер рахунку*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>МФО*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>Банк*</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>МФО*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>Телефон</td>
+										<td><input type="numbers"></td>
+									</tr>
+								</table>
+								<div class="save">
+									<a href="#"><img src="img/save_btn.jpg" alt=""></a>
+								</div>
+							</form>
+							
+						</div>
+
+						<div class="tab_5 error">
+							<form action="" method="post">
+								<table>
+									<tr>
+										<td></td>
+										<td >
+											<input type="radio" checked>Неприбутова організація
+											<input type="radio"> фізична особа підприємець
+										</td>
+									</tr>
+									<tr>
+										<td id="red_error">Власник рахунку*</td>
+										<td>
+												<input type="name">
+												<h4>Нажаль проект не збережено! Будь-ласа виправте помилки!</h4>
+										</td>
+									</tr>
+									<tr>
+										<td>Адреса*</td>
+										<td><input type="text" value="просп. Юності 45, кв.118, м. Вінниця, Україна, 21021"></td>
+									</tr>
+									<tr>
+										<td>Mісто*</td>
+										<td>
+											<select name="city" id="city">
+												<option value="" ></option>
+												<option value="">Київ</option>
+												<option value="" selected>Вінниця</option>
+												<option value="">Липовець</option>
+												<option value="">Луганск</option>
+												<option value="">Свердловск</option>
+												<option value="">Донбас</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Номер рахунку*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>МФО*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>Банк*</td>
+										<td><input type="text"></td>
+									</tr>
+									<tr>
+										<td>МФО*</td>
+										<td><input type="numbers"></td>
+									</tr>
+									<tr>
+										<td>Телефон</td>
+										<td><input type="numbers"></td>
+									</tr>
+								</table>
+								<div class="save_5 save_error">
+									<img src="img/save_btn.jpg" alt="">
+								</div>
+							</form>
+							
+						</div>
+					</div>
+					<div class="blo4ok"></div>
+				</div>
+
+			</div>
+
+			<div class="content_footer">
+				<div class="blok-left"><img src="img/article-emblem-main.png" alt="Vinnitsia"></div>
+				<div class="blok-right">
+					<a href="#label1">
+						<!-- Вгору -->
+					<img id="up" src="img/roket2.jpg" alt="Up" >
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="right_block"></div>
+	</main>
+
+	<footer>
+		<div class="menu_top">
+			<div class="menu">	
+				<div><a href="#">Контакти</a></div>
+				<div><a href="#">Блог</a></div>
+				<div><a href="#">Партнери</a></div>
+				<div><a href="#">Правила сайту</a></div>
+				<div><a href="#">Авторизуватися</a></div>
+				<div><a href="#">Про нас</a></div>
+				<div><a href="#">Програма</a></div>
+				<div><a href="#">Контакти</a></div>
+				<div><a href="#">Допомога</a></div>
+
+			</div>
+		</div>		
+		<div class="mail">
+			<span>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				Дізнайтеся про нові проекти першим
+				<input type="email" name="email" placeholder="ваш e-mail">
+
+				<!-- <div class="social"> -->
+					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				<!-- </div> -->
+			</span>
+			
+		</div>
+
+		<div class="contacts">
+			<div><i class="fa fa-link" aria-hidden="true"></i>  www.uspih.vn.ua</div>
+			<div><i class="fa fa-paper-plane" aria-hidden="true"></i>  uspih.city@gmail.com</div>
+			<div><i class="fa fa-mobile" aria-hidden="true"></i>   +38 (063) 189-22-13</div>
+		</div>
+	</footer>
+
+</body>
+</html>
